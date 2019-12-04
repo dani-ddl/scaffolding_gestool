@@ -16,9 +16,9 @@ echo ""
 
 sleep 2
 
-apt-get update -y
+#apt-get update -y
 
-apt-get upgrade -y
+#apt-get upgrade -y
 
 #Instalación de docker 
 
@@ -40,4 +40,4 @@ echo ""
 
 sleep 2
 
-apt-get install docker-composse
+pip install docker-compose
