@@ -66,4 +66,6 @@ sleep 2
 
 cd ../../odoo
 
+rm config/odoo.conf
+
 docker-compose up -d
