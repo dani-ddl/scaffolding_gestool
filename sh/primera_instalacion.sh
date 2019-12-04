@@ -56,6 +56,34 @@ rm ../../odoo/extra-addons/prueba.txt
 
 git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/xtendoo
 
+git clone https://github.com/OCA/server-ux.git ../../odoo/extra-addons/server-ux
+
+git clone https://github.com/Openworx/backend_theme.git ../../odoo/extra-addons/backend_theme
+
+git clone https://github.com/OCA/web.git ../../odoo/extra-addons/web
+
+git clone https://github.com/OCA/bank-payment.git ../../odoo/extra-addons/bank-payment
+
+git clone https://github.com/OCA/account-invoice-reporting.git ../../odoo/extra-addons/account-invoice-reporting
+
+git clone https://github.com/OCA/account-invoicing.git ../../odoo/extra-addons/account-invoicing
+
+git clone https://github.com/OCA/sale-reporting.git ../../odoo/extra-addons/sale-reporting
+
+git clone https://github.com/OCA/commission.git ../../odoo/extra-addons/commission
+
+git clone https://github.com/OCA/purchase-workflow.git ../../odoo/extra-addons/purchase-workflow
+
+git clone https://github.com/OCA/stock-logistics-barcode.git ../../odoo/extra-addons/stock-logistics-barcode
+
+git clone https://github.com/OCA/sale-workflow.git ../../odoo/extra-addons/sale-workflow
+
+git clone https://github.com/hibou-io/hibou-odoo-suite.git ../../odoo/extra-addons/hibou-odoo-suite
+
+git clone https://github.com/OCA/l10n-spain.git ../../odoo/extra-addons/l10n-spain
+
+git clone https://github.com/OCA/community-data-files.git ../../odoo/extra-addons/community-data-files
+
 #añadir el resto de gits
 
 chmod -R 777 ../../odoo/extra-addons
