@@ -54,7 +54,7 @@ sleep 2
 
 rm ../../odoo/extra-addons/prueba.txt
 
-git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/
+git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/xtendoo
 
 #añadir el resto de gits
 
@@ -66,8 +66,14 @@ echo ""
 
 sleep 2
 
-#rm ../../odoo/config/odoo.conf
-
 cd ../../odoo
 
 docker-compose up -d
+
+echo ""
+echo "Eliminando archivos sobrantes"
+echo ""
+
+cd ../
+
+rm -r scaffolding_gestool
