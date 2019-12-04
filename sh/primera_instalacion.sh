@@ -40,4 +40,6 @@ echo ""
 
 sleep 2
 
-#apt-get install docker-composse -y
+apt-get install python-pip -y
+
+#pip install docker-compose
