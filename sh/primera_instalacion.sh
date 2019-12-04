@@ -8,6 +8,7 @@ echo ""
 cp -r ../../scaffolding_gestool/odoo ../../
 cp -r ../../scaffolding_gestool/sh ../../
 #rm -r ../scaffolding_gestool
+chmod -R 777 *
 
 
 #Actualizamos repositorios de ubuntu
@@ -45,14 +46,16 @@ sleep 2
 echo "Añadiendo modulos en extra-addons"
 echo ""
 
+sleep 2
+
 rm ../../odoo/extra-addons/prueba.txt
 
 git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/
 #añadir el resto de gits
-
-cd ../../odoo
-
+echo ""
 echo "Levantamos el servicio odoo"
 echo ""
 
-docker-compose up -d
+sleep 2
+
+docker-compose up -f ../../odoo/docker-compose.yaml -d
