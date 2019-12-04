@@ -105,3 +105,13 @@ echo ""
 cd ../
 
 rm -r scaffolding_gestool
+
+echo ""
+echo "Levantando dockerui en el puerto 9000"
+echo ""
+
+docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui
+
+echo ""
+echo "Fin de la instalación"
+echo ""
