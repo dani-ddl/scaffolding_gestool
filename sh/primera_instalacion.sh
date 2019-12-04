@@ -8,7 +8,8 @@ echo ""
 cp -r ../../scaffolding_gestool/odoo ../../
 cp -r ../../scaffolding_gestool/sh ../../
 #rm -r ../scaffolding_gestool
-chmod -R 777 ../../*
+chmod -R 777 ../../odoo
+chmod -R 777 ../../sh
 
 #Actualizamos repositorios de ubuntu
 
@@ -17,9 +18,9 @@ echo ""
 
 sleep 2
 
-apt-get update -y
+#apt-get update -y
 
-apt-get upgrade -y
+#apt-get upgrade -y
 
 Instalación de docker 
 
@@ -28,7 +29,7 @@ echo ""
 
 sleep 2
 
-wget -qO- https://get.docker.com/ | sh
+#wget -qO- https://get.docker.com/ | sh
 
 echo ""
 echo "Docker instalado correctamente"
