@@ -6,7 +6,9 @@ echo "Preparando directorios"
 echo ""
 
 mv scaffolding_gestool/odoo ./
+mv scaffolding_gestool/sh ./
 rm -r scaffolding_gestool
+
 
 #Actualizamos repositorios de ubuntu
 echo "Actualizando repositorios"
@@ -25,7 +27,7 @@ echo ""
 
 sleep 2
 
-sudo curl -sSL https://get.docker.com | sh
+wget -qO- https://get.docker.com/ | sh
 
 echo ""
 echo "Docker instalado correctamente"
