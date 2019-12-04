@@ -7,7 +7,7 @@ echo ""
 
 cp -r ../../scaffolding_gestool/odoo ../../
 cp -r ../../scaffolding_gestool/sh ../../
-#rm -r ../scaffolding_gestool
+
 chmod -R 777 ../../odoo
 chmod -R 777 ../../sh
 
@@ -22,7 +22,11 @@ sleep 2
 
 #apt-get upgrade -y
 
-Instalación de docker 
+#aumentar el inotify_watch
+
+echo 16384 > /proc/sys/fs/inotify/max_user_watches
+
+#Instalación de docker 
 
 echo "Instalando docker"
 echo ""
