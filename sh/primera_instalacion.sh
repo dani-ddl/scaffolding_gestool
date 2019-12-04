@@ -64,6 +64,6 @@ echo ""
 
 sleep 2
 
-cd ../../
+cd ../../odoo
 
 docker-compose up -d
