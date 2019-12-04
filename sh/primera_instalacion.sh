@@ -106,11 +106,37 @@ cd ../
 
 rm -r scaffolding_gestool
 
-echo ""
-echo "Levantando dockerui en el puerto 9000"
-echo ""
+echo "¿Quieres levantar Dockerui?(default Sí)"
+echo "Y/y -> Sí"
+echo "N/n -> No"
+read -p "Seleccione una opcion: " request
 
-docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui
+#Analizamos la respuesta
+
+case $request in
+y) 	
+	echo ""
+	echo "Levantando dockerui en el puerto 9000"
+	echo ""
+	docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui;;
+
+Y)
+	echo ""
+	echo "Levantando dockerui en el puerto 9000"
+	echo ""
+	docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui;;
+
+n)echo "No se instalara Dockerui";;
+N)echo "No se instalara Dockerui";;
+
+*)
+	echo ""
+	echo "Levantando dockerui en el puerto 9000"
+	echo ""
+	docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui;; 
+esac
+sleep 1
+
 
 echo ""
 echo "Fin de la instalación"
