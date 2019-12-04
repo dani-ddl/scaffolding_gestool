@@ -45,4 +45,6 @@ sleep 2
 echo "Añadiendo modulos en extra-addons"
 echo ""
 
+rm ../../odoo/extra-addons/prueba.txt
+
 git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/
