@@ -40,6 +40,4 @@ echo ""
 
 sleep 2
 
-apt-get install yum
-
-yum install docker-compose
+apt-get install docker-composse
