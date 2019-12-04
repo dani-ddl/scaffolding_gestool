@@ -58,14 +58,16 @@ git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addo
 
 #añadir el resto de gits
 
+chmod -R 777 ../../odoo/extra-addons
+
 echo ""
 echo "Levantando el servicio odoo"
 echo ""
 
 sleep 2
 
-cd ../../odoo
+rm ../../odoo/config/odoo.conf
 
-rm config/odoo.conf
+cd ../../odoo
 
 docker-compose up -d
