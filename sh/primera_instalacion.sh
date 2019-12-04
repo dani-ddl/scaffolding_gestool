@@ -40,4 +40,9 @@ echo ""
 
 sleep 2
 
-pip install docker-compose
+#pip install docker-compose
+
+echo "Añadiendo modulos en extra-addons"
+echo ""
+
+git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/
