@@ -48,3 +48,11 @@ echo ""
 rm ../../odoo/extra-addons/prueba.txt
 
 git clone https://github.com/manuelcalerosolis/xtendoo.git ../../odoo/extra-addons/
+#añadir el resto de gits
+
+cd ../../odoo
+
+echo "Levantamos el servicio odoo"
+echo ""
+
+docker-compose up -d
