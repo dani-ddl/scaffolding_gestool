@@ -66,7 +66,7 @@ echo ""
 
 sleep 2
 
-rm ../../odoo/config/odoo.conf
+#rm ../../odoo/config/odoo.conf
 
 cd ../../odoo
 
