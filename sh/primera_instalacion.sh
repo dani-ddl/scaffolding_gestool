@@ -93,6 +93,10 @@ git clone --branch 12.0 --depth 1 https://github.com/OCA/account-payment.git ../
 
 git clone --branch 12.0 --depth 1 https://github.com/OCA/account-financial-reporting.git ../../odoo/extra-addons/account-financial-reporting
 
+git clone --branch 12.0 --depth 1 https://github.com/OCA/mis-builder.git ../../odoo/extra-addons/mis-builder
+
+git clone --branch 12.0 --depth 1 https://github.com/OCA/reporting-engine.git ../../odoo/extra-addons/reporting-engine
+
 #añadir el resto de gits
 
 chmod -R 777 ../../odoo/extra-addons
