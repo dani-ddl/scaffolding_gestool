@@ -33,7 +33,7 @@ echo ""
 
 sleep 2
 
-apt-get install docker.io
+apt-get install docker.io -y
 
 echo ""
 echo "Docker instalado correctamente"
@@ -48,7 +48,7 @@ echo ""
 
 sleep 2
 
-apt-get install docker-compose
+apt-get install docker-compose -y
 
 #Añadimos los modulos en extra-addons
 
