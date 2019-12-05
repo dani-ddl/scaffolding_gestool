@@ -123,6 +123,12 @@ echo ""
 echo "Instalando dependencias"
 echo ""
 
+docker ps -a
+
+sleep 10
+
+docker ps -a
+
 sleep 1
 
 echo "Instalando xlrd"
