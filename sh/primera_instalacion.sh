@@ -119,6 +119,17 @@ cd ../
 
 rm -r scaffolding_gestool
 
+echo ""
+echo "Instalando dependencias"
+echo ""
+
+sleep 1
+
+echo "Instalando xlrd"
+echo ""
+
+docker exec odoo_odoo_1 pip3 install xlrd
+
 echo "¿Quieres levantar Dockerui?(default Sí)"
 echo "Y/y -> Sí"
 echo "N/n -> No"
