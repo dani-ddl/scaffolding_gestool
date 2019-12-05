@@ -89,6 +89,8 @@ git clone https://github.com/OCA/l10n-spain.git ../../odoo/extra-addons/l10n-spa
 
 git clone https://github.com/OCA/community-data-files.git ../../odoo/extra-addons/community-data-files
 
+git clone --branch 12.0 --depth 1 https://github.com/OCA/account-payment.git ../../odoo/extra-addons/account-payment
+
 #añadir el resto de gits
 
 chmod -R 777 ../../odoo/extra-addons
