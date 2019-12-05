@@ -91,6 +91,8 @@ git clone https://github.com/OCA/community-data-files.git ../../odoo/extra-addon
 
 git clone --branch 12.0 --depth 1 https://github.com/OCA/account-payment.git ../../odoo/extra-addons/account-payment
 
+git clone --branch 12.0 --depth 1 https://github.com/OCA/account-financial-reporting.git ../../odoo/extra-addons/account-financial-reporting
+
 #añadir el resto de gits
 
 chmod -R 777 ../../odoo/extra-addons
