@@ -127,17 +127,6 @@ read -p "Seleccione una opcion: " request
 #Analizamos la respuesta
 
 case $request in
-y) 	
-	echo ""
-	echo "Levantando dockerui en el puerto 9000"
-	echo ""
-	docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui;;
-
-Y)
-	echo ""
-	echo "Levantando dockerui en el puerto 9000"
-	echo ""
-	docker run -d -p 9000:9000 --privileged -v //var/run/docker.sock:/var/run/docker.sock --name=dockerui kevan/dockerui;;
 
 n)echo "No se instalara Dockerui";;
 N)echo "No se instalara Dockerui";;
