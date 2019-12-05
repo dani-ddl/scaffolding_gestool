@@ -18,9 +18,9 @@ echo ""
 
 sleep 2
 
-apt-get update -y
+#apt-get update -y
 
-apt-get upgrade -y
+#apt-get upgrade -y
 
 #aumentar el inotify_watch
 
@@ -33,7 +33,7 @@ echo ""
 
 sleep 2
 
-apt-get install docker.io -y
+#apt-get install docker.io -y
 
 echo ""
 echo "Docker instalado correctamente"
@@ -48,7 +48,7 @@ echo ""
 
 sleep 2
 
-apt-get install docker-compose -y
+#apt-get install docker-compose -y
 
 #Añadimos los modulos en extra-addons
 
