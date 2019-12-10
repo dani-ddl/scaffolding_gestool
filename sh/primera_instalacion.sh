@@ -33,7 +33,7 @@ echo ""
 
 sleep 2
 
-apt-get install docker.io -y
+#apt-get install docker.io -y
 
 echo ""
 echo "Docker instalado correctamente"
@@ -48,7 +48,7 @@ echo ""
 
 sleep 2
 
-apt-get install docker-compose -y
+#apt-get install docker-compose -y
 
 #Añadimos los modulos en extra-addons
 
@@ -109,6 +109,9 @@ sleep 2
 
 cd ../../odoo
 
+#eliminando odoo.conf
+rm config/odoo.conf
+
 docker-compose up -d
 
 echo ""
@@ -130,6 +133,8 @@ echo ""
 #docker ps -a
 
 sleep 1
+
+
 
 #echo "Instalando xlrd"
 #echo ""
